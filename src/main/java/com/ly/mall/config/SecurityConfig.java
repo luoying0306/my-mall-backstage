@@ -1,7 +1,7 @@
 package com.ly.mall.config;
 
 
-import com.ly.mall.config.filter.JwtAuthenticationTokenFilter;
+import com.ly.mall.config.security.filter.JwtAuthenticationTokenFilter;
 import com.ly.mall.config.handle.AuthenticationEntryPointImpl;
 import com.ly.mall.config.handle.LogoutSuccessHandlerImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -99,8 +99,4 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return new BCryptPasswordEncoder();
     }
 
-    public static void main(String[] args) {
-        BCryptPasswordEncoder bc = new BCryptPasswordEncoder();
-        System.out.println(bc.encode("123456"));
-    }
 }

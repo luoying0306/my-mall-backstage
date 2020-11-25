@@ -1,4 +1,4 @@
-package com.ly.mall.config.filter;
+package com.ly.mall.config.security.filter;
 
 import com.sdz.love.bamboos.commons.config.service.LoginUser;
 import com.sdz.love.bamboos.commons.config.service.TokenService;

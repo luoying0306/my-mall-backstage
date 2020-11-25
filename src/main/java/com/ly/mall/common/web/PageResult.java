@@ -12,9 +12,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class PageResult <T>{
-
     private Integer total;
     private String msg;
     private List<T> data;
-
 }

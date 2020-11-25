@@ -2,6 +2,7 @@ package com.ly.mall.config.handle;
 
 import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
+import com.ly.mall.common.web.Result;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.AuthenticationEntryPoint;
@@ -23,6 +24,6 @@ public class AuthenticationEntryPointImpl implements AuthenticationEntryPoint, S
     public void commence(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, AuthenticationException e) throws IOException, ServletException {
         int code = HttpStatus.UNAUTHORIZED.value();
         String msg = StringUtils.format("请求访问：{}，认证失败，无法访问系统资源", httpServletRequest.getRequestURI());
-        ServletUtils.renderString(httpServletResponse, JSON.toJSONString(ResponseResult.failure(msg,401)));
+        ServletUtils.renderString(httpServletResponse, JSON.toJSONString(Result.fall(msg,401,null)));
     }
 }
