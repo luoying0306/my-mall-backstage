@@ -1,7 +1,5 @@
 package com.ly.mall.controller;
 
-import com.ly.mall.domain.entity.User;
-import com.ly.mall.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

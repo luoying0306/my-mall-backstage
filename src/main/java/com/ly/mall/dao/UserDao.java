@@ -1,8 +1,6 @@
 package com.ly.mall.dao;
 
 
-import com.ly.mall.domain.entity.User;
-
 import java.util.List;
 import java.util.Map;
 

@@ -1,7 +1,6 @@
 package com.ly.mall.dao.impl;
 
 import com.ly.mall.dao.UserDao;
-import com.ly.mall.domain.entity.User;
 import org.springframework.util.StringUtils;
 
 import java.util.*;

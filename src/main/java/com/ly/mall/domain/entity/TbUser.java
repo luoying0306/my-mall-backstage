@@ -8,8 +8,8 @@ import java.io.Serializable;
 import lombok.Data;
 
 @Data
-@TableName(value = "`user`")
-public class User implements Serializable {
+@TableName(value = "tb_user")
+public class TbUser implements Serializable {
     /**
      * id
      */
