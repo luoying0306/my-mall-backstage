@@ -3,3 +3,7 @@
 server:
   # 端口
   port: 8090
+
+spring:
+  profiles:
+    active: dev
