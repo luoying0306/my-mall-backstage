@@ -1,6 +1,7 @@
 package com.ly.mall.common.exception.file;
 
-import com.mds.my.platform.lostandfound.common.exception.BaseException;
+
+import com.ly.mall.common.exception.BaseException;
 
 /**
  *  文件异常

@@ -27,10 +27,8 @@ public class TbMenu implements Serializable {
     /**
      * 父id
      */
-    @TableField(value = "
-parent_id")
-    private Long 
-parentId;
+    @TableField(value = "parent_id")
+    private Long parentId;
 
     /**
      * 显示顺序
@@ -89,9 +87,7 @@ parentId;
 
     public static final String COL_MENU_NAME = "menu_name";
 
-    public static final String COL_
-PARENT_ID = "
-parent_id";
+    public static final String COL_PARENT_ID = "parent_id";
 
     public static final String COL_ORDER_NUM = "order_num";
 

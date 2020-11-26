@@ -26,6 +26,7 @@ public class LoginController {
     @PostMapping("/login")
     public Result login(@RequestBody LoginBody loginBody)
     {
+        System.out.println("登录信息："+loginBody);
         String token = loginService.login(loginBody.getUsername(), loginBody.getPassword());
         Map<String,String> result = new HashMap<>(1);
         result.put("token",token);

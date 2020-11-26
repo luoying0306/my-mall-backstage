@@ -21,9 +21,9 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
     @Autowired
     private TbUserService tbUserService;
-    @Autowired
+    /*@Autowired
     private SysPermissionService sysPermissionService;
-
+*/
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         LambdaQueryWrapper<TbUser> lqw = new LambdaQueryWrapper<>();
@@ -46,4 +46,6 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     private UserDetails createLoginUser(TbUser user) {
         return new LoginUser(user, null);
     }
+
+
 }

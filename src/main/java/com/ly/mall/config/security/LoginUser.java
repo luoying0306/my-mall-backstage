@@ -79,12 +79,14 @@ public class LoginUser implements UserDetails
     @Override
     public String getPassword()
     {
+        System.out.println("使用到密码："+user.getPassword());
         return user.getPassword();
     }
 
     @Override
     public String getUsername()
     {
+        System.out.println("使用到账号："+user.getName());
         return user.getName();
     }
 
