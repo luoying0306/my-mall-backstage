@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ly.mall.dao.SysMessageMapper">
+  <resultMap id="BaseResultMap" type="com.ly.mall.domain.entity.SysMessage">
+    <!--@mbg.generated-->
+    <!--@Table sys_message-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="rel_user" jdbcType="INTEGER" property="relUser" />
+    <result column="acc_user" jdbcType="INTEGER" property="accUser" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+    <result column="read" jdbcType="BIT" property="read" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, rel_user, acc_user, content, `type`, `read`, create_time
+  </sql>
+</mapper>
