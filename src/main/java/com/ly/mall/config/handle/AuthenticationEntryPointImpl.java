@@ -2,6 +2,7 @@ package com.ly.mall.config.handle;
 
 import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
+import com.ly.mall.common.utils.ServletUtils;
 import com.ly.mall.common.web.Result;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.AuthenticationException;

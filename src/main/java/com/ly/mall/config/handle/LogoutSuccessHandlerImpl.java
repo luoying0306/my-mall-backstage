@@ -1,10 +1,10 @@
 package com.ly.mall.config.handle;
 
 import com.alibaba.fastjson.JSON;
-import com.sdz.love.bamboos.commons.ResponseResult;
-import com.sdz.love.bamboos.commons.config.service.LoginUser;
-import com.sdz.love.bamboos.commons.config.service.TokenService;
-import com.sdz.love.bamboos.commons.util.ServletUtils;
+import com.ly.mall.common.utils.ServletUtils;
+import com.ly.mall.common.web.Result;
+import com.ly.mall.config.security.LoginUser;
+import com.ly.mall.config.security.service.TokenService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.web.authentication.logout.LogoutSuccessHandler;
@@ -34,6 +34,6 @@ public class LogoutSuccessHandlerImpl implements LogoutSuccessHandler {
             // 删除用户缓存记录
             tokenService.delLoginUser(loginUser.getToken());
         }
-        ServletUtils.renderString(httpServletResponse, JSON.toJSONString(ResponseResult.success("退出成功")));
+        ServletUtils.renderString(httpServletResponse, JSON.toJSONString(Result.success("退出成功")));
     }
 }
