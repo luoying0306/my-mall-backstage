@@ -4,10 +4,7 @@ import com.ly.mall.common.web.Result;
 import com.ly.mall.domain.entity.SysDictData;
 import com.ly.mall.service.SysDictDataService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  *  1. 打注解
@@ -31,9 +28,13 @@ public class DictDataController {
      */
     @PostMapping("/save")
     public Result save(@RequestBody SysDictData sysDictData){
-        /**
-         *  alt + 回车
-         */
+
         return sysDictDataService.saveDictData(sysDictData);
     }
+    @GetMapping("/select")
+    public  Result select(){
+        return Result.success(sysDictDataService.list());
+    }
+
+
 }

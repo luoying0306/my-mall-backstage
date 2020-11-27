@@ -20,11 +20,17 @@ public class DictTypeController {
      */
     @PostMapping("/save")
     public Result save(@RequestBody SysDictType sysDictType){
+
         return sysDictTypeService.saveDictType(sysDictType);
     }
 
+    /**
+     * 获取字典数据列表
+     * @return
+     */
     @GetMapping("/list")
     public Result list(){
+
         return Result.success(sysDictTypeService.list());
     }
 }

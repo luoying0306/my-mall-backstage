@@ -8,9 +8,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Result<T> {
-    private String msg;
-    private Integer code;
-    private T data;
+    private String msg;//消息
+    private Integer code;//状态码
+    private T data;//返回的数据
     public static <T> Result<T> success(String msg,Integer  code,T t){
         return new Result<T>(msg,code,t);
     }

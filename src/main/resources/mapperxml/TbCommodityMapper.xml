@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ly.mall.dao.TbCommodityMapper">
+  <resultMap id="BaseResultMap" type="com.ly.mall.domain.entity.TbCommodity">
+    <!--@mbg.generated-->
+    <!--@Table tb_commodity-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="com_name" jdbcType="VARCHAR" property="comName" />
+    <result column="image" jdbcType="VARCHAR" property="image" />
+    <result column="sale_number" jdbcType="INTEGER" property="saleNumber" />
+    <result column="total" jdbcType="INTEGER" property="total" />
+    <result column="com _type" jdbcType="INTEGER" property="comType" />
+    <result column="date_time" jdbcType="TIMESTAMP" property="dateTime" />
+    <result column="com_state" jdbcType="INTEGER" property="comState" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="describe" jdbcType="LONGVARCHAR" property="describe" />
+    <result column="com_title" jdbcType="VARCHAR" property="comTitle" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, com_name, image, sale_number, total, `com _type`, date_time, com_state, price, 
+    `describe`, com_title, user_id
+  </sql>
+</mapper>

@@ -4,20 +4,21 @@ import com.ly.mall.common.web.Result;
 import com.ly.mall.config.security.LoginBody;
 import com.ly.mall.config.security.service.LoginService;
 import com.ly.mall.config.security.service.TokenService;
+import com.ly.mall.service.TbUserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.Map;
 
 @RestController
+
 public class LoginController {
     @Autowired
     private TokenService tokenService;
     @Autowired
     private LoginService loginService;
+
 
     /** 登录
      * @param loginBody username password
@@ -32,4 +33,5 @@ public class LoginController {
         result.put("token",token);
         return Result.success("登录成功！",200,result);
     }
+
 }

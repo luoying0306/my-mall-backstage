@@ -12,7 +12,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class PageResult <T>{
-    private Integer total;
-    private String msg;
-    private List<T> data;
+    private Integer total;//数据总数
+    private String msg;//消息
+    private List<T> data;//集合
 }
